@@ -37,7 +37,7 @@
         </TR>
         <TR>
           <TD class="t"><a href="https://github.com/juji-io/datalevin">Datalevin</a> by <a href="https://juji.io/">Juji</a></TD>
-          <TD class="q">Datalevin extends DataScript with durable storage and has been designed to be both in embedded and client/server mode. Data durability is handled by <a href="https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database">LMDB</a>, which is optimized for concurrent read-intensive workloads. Datalevin does not store transaction history.</TD>
+          <TD class="q">Datalevin extends DataScript with durable storage and a query optimizer. It has been designed to be both in embedded and client/server mode. Data durability is handled by <a href="https://en.wikipedia.org/wiki/Lightning_Memory-Mapped_Database">LMDB</a>, which is optimized for concurrent read-intensive workloads. Datalevin does not store transaction history.</TD>
         </TR>
         <TR>
           <TD class="t"><a href="https://github.com/replikativ/datahike">Datahike</a> by <a href="https://lambdaforge.io/">lamdaforge</a></TD>
@@ -69,7 +69,7 @@
 
     <TABLE FRAME=VOID CELLSPACING=0 COLS=6 RULES=NONE BORDER=0 >
       <TBODY>
-        <TR>
+        <TR id="sticky-header">
           <TD><b>Capabilities</b></TD>
           <TD class="t"><a href="https://github.com/tonsky/datascript">DataScript</a></TD>
           <TD class="t"><a href="https://github.com/juji-io/datalevin">Datalevin</a></TD>
@@ -151,7 +151,7 @@
         <TR>
           <TD>Speculative transactions</TD>
           <TD class="y">Y</TD>
-          <TD class="n">N</TD>
+          <TD class="y">Y</TD>
           <TD class="y">Y</TD>
           <TD class="m">Planned (<a href="https://github.com/threatgrid/asami/issues/113">Issue</a>)</TD>
           <TD class="y">Y</TD>
@@ -160,7 +160,7 @@
         <TR>
           <TD>Transaction functions</TD>
           <TD class="y">Y</TD>
-          <TD class="m">Y</TD>
+          <TD class="y">Y</TD>
           <TD class="y">Y</TD>
           <TD class="m">Proposed (Issue TBD)</TD>
           <TD class="y">Y</TD>
@@ -187,7 +187,7 @@
         <TR>
           <TD>Composite tuples</TD>
           <TD class="y">Y</TD>
-          <TD class="m">Planned (<a href="https://github.com/juji-io/datalevin/issues/3">Issue</a>)</TD>
+          <TD class="y">Y</TD>
           <TD class="y">Y</TD>
           <TD class="m">Planned (<a href="https://github.com/threatgrid/asami/issues/168">Issue</a>)</TD>
           <TD class="n">N</TD>
@@ -204,7 +204,7 @@
         <TR>
           <TD>Query planner</TD>
           <TD class="n">N</TD>
-          <TD class="m">Proposed (<a href="https://github.com/juji-io/datalevin/issues/11">Issue</a>)</TD>
+          <TD class="y">Y</TD>
           <TD class="m">Proposed (<a href="https://github.com/replikativ/datahike/issues/294">Issue</a>)</TD>
           <TD class="y">Y</TD>
           <TD class="y">Y</TD>
@@ -249,7 +249,7 @@
         <TR>
           <TD>Full-text search</TD>
           <TD class="n">N</TD>
-          <TD class="m">Y</TD>
+          <TD class="y">Y</TD>
           <TD class="n">N</TD>
           <TD class="n">N</TD>
           <TD class="y">Y</TD>
@@ -364,7 +364,7 @@
         <TR>
           <TD>Online index upgrades</TD>
           <TD class="n">N</TD>
-          <TD class="n">N</TD>
+          <TD class="m">Planned (<a href="https://github.com/juji-io/datalevin/issues/276">Issue</a>)</TD>
           <TD class="n">N</TD>
           <TD class="n">N</TD>
           <TD class="y">Y</TD>
@@ -400,7 +400,7 @@
         <TR>
           <TD>Commercial support</TD>
           <TD class="n">N</TD>
-          <TD class="m">Planned</TD>
+          <TD class="y">Y</TD>
           <TD class="y">Y</TD>
           <TD class="n">N</TD>
           <TD class="y">Y</TD>
